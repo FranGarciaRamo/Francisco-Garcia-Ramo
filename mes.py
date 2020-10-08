@@ -1,8 +1,14 @@
-'''cAMBIAR MES POR NUMERO'''
-def mes():
-    abreviames="EneFebMarAbrMayJunJulAgoSepOctNovDic"
-    numeromes=input("introduce mes: ")
-    pos=(numeromes-1)*3
-    print "El mes es: ", abreviames[pos:pos+3]
+'''CAMBIAR MES POR NUMERO'''
+'''genera una contraseña partir de 3 letras del nombre y tres del apellido'''
 
-mes()
+def contrasena():
+    nombre = raw_input("Introduce nombre: ")
+    apellidos = raw_input ("Introduce el apellido: ")
+    import random
+    n = random.randint(0,99)
+    contrasena = nombre[0:4]+ apellidos[0]
+    nombre=contrasena.capitalize()
+    print "Tu contrasena personalizada es: ",nombre,n
+
+    
+contrasena()
